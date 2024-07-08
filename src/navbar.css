@@ -265,12 +265,12 @@ a:hover {
     } */
 
     .icon img {
-        width: 24px;
-        height: 24px;
+        width: 24px !important;
+        height: 24px !important;
     }
     .icon {
-        width: 24px;
-        height: 24px;
+        width: 24px !important;
+        height: 24px !important;
     }
 
     .navtext {
