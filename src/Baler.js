@@ -18,6 +18,9 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 
 class Baler extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     handleDownload = () => {
       
       const link = document.createElement('a');
@@ -32,6 +35,7 @@ class Baler extends Component {
       
       document.body.removeChild(link);
     };
+    
   
     render() {
         return (

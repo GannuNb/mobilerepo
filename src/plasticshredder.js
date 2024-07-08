@@ -21,6 +21,9 @@ import plasticbalersimage2 from "./images/plasticbalersimages2.jpg"
 
 
 class Plasticshredder extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>

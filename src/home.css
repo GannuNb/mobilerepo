@@ -41,6 +41,8 @@
     margin: 1% 0 0%; 
     font-weight: bold;
     width:200%;
+    color: #000000e7;
+    
 }
 
 .in-sustainable-recycling {
@@ -56,7 +58,24 @@
     text-align: left;
     margin-top: 3%;
     margin-left: 31%;
+    animation: colorChange 3s infinite;
 }
+@keyframes colorChange {
+  0% {
+    color: #FF7900; /* Starting color */
+  }
+  70% {
+    color: #007bff; /* Intermediate color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow halfway */
+  }
+  100% {
+    color: #6fff00; /* Return to starting color */
+  }
+  100% {
+    color: #e0e717; /* Return to starting color */
+  }
+  }
+
 
 .at-vikah-ecotech {
     font-size: 1.2em;
@@ -66,6 +85,11 @@
     width: 123%;
     text-align: justify;
 }
+ .at-vikah-ecotech:hover {
+  animation: none; 
+  color: #007bff; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
 
 @media only screen and (max-width: 600px) {
     .homecontainer {
@@ -81,10 +105,10 @@
     }
 
       .homecarousel {
-        width: 50%;
+        width: 60%;
         margin-top: 12%;
         margin-right: 26px;
-        height: 245px;
+        height: 265px;
     }
 
     .your {
@@ -101,6 +125,7 @@
     .at-vikah-ecotech {
         font-size: 64%;
         margin-top: 2%;
+        font-size: 0.9em;
     }
 }
 
@@ -109,7 +134,7 @@
 
   .homecarousel {
       width: 40%;
-      margin-top: 22%;
+      margin-top: 29%;
       margin-right: 10%;
       max-height: 300px;
       height: auto;
@@ -361,7 +386,8 @@
   
   .trade1 .date,
   .trade1 .location,
-  .trade1 .booth {
+  .trade1 .booth,.trade1 .tradelink
+   {
     margin: 10px 0;
     font-size: 1.1rem;
     text-align: center;
@@ -369,14 +395,16 @@
   
   .trade1 .date span,
   .trade1 .location span,
-  .trade1 .booth span {
+  .trade1 .booth span ,
+  .trade1 .tradelink span{
     color: #ff5733;
     transition: color 0.3s ease;
   }
   
   .trade1:hover .date span,
   .trade1:hover .location span,
-  .trade1:hover .booth span {
+  .trade1:hover .booth span,
+  .trade1:hover .tradelink span{
     color: #e63946;
   }
   
@@ -395,7 +423,125 @@
     .trade1 .details,
     .trade1 .date,
     .trade1 .location,
-    .trade1 .booth {
+    .trade1 .booth ,
+    .trade1 .tradelink{
       font-size: 0.6rem;
     }
 }
+
+
+
+.testimonials {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2% 0;
+  margin-left: 16%;
+}
+
+.testimonial {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  margin-bottom: 0px;
+  height: 330px;
+  flex-direction: row; /* Default direction for larger screens */
+}
+
+.testimonial-img {
+  width: 80%; 
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.testimonial-content {
+  flex-grow: 1;
+}
+
+.testimonial-content h3 {
+  font-size: 1.125em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial-content p {
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.customer-name {
+  display: block;
+  font-size: 0.9em;
+  color: #080808;
+  margin-top: 6%;
+  margin-left: 61%;
+}
+
+.testimonialhead {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #ff5733;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 600px) {
+  .testimonials {
+    margin-left: auto;
+    padding: 5%;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 700px;
+  }
+
+  .testimonials .testimonial .testimonial-img {
+    width: 70% !important; 
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+
+  .testimonial-content {
+    text-align: center;
+  }
+
+  .customer-name {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 816px) {
+  .testimonials {
+    margin-left: 3%;
+    padding: 5%;
+  }
+
+  /* .testimonial {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 700px;
+  } */
+
+
+
+}
+
+
+
+

@@ -14,6 +14,9 @@ import metalshredderimg3 from "./images/metalbalerimages3jpg.jpg"
 
 
 class Metalbalers extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
 
   
     render() {

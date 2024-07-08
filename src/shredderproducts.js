@@ -11,6 +11,9 @@ import enquiryimg from "./images/enquiry.png"
 
 
 class Shredderproducts extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>

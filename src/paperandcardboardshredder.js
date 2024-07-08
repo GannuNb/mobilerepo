@@ -19,6 +19,9 @@ import  paperandcardboardimg2 from "./images/cardboardbalerimages2.jpg"
 
 
 class Paperandcardboardshredder extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>

@@ -9,6 +9,9 @@ import  paperandcardboardimg2 from "./images/cardboardbalerimages2.jpg"
 
 
 class Cbpsb extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
   
     render() {
         return (

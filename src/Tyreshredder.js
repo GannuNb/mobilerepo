@@ -25,6 +25,9 @@ import shredderimg3 from './images/shredderimg3.jpeg'
 
 
 class Tyreshredder extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
  
  
     render() {

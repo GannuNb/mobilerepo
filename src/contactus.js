@@ -22,6 +22,10 @@ import australiaflag from "./images/australia.webp"
 
 
 class Contactus extends Component{
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+}
     render(){
         return(
             <>
@@ -89,7 +93,7 @@ class Contactus extends Component{
     <div className="card-footer">
       <div className="contact-info">
         <div className="contact-item">
-          <b>Off :</b><span> :+914049471616</span><br></br>
+          <b>Off :</b><span> +914049471616</span><br></br>
           
         </div>
         <div className="contact-item"><b>Mobile:</b> <span>+91 9515162108</span></div>
@@ -187,7 +191,7 @@ class Contactus extends Component{
     <div className="card-footer">
       <div className="contact-info">
         <div className="contact-item">
-          <b>Off :</b><span> :+968 79211933</span><br></br>
+          <b>Off :</b><span> +968 79211933</span><br></br>
           
         </div>
        
@@ -228,7 +232,7 @@ class Contactus extends Component{
     <div className="card-footer">
       <div className="contact-info">
         <div className="contact-item">
-          <b>Off :</b><span> :: +64223136208</span><br></br>
+          <b>Off :</b><span>  +64223136208</span><br></br>
           
         </div>
        
@@ -247,7 +251,7 @@ class Contactus extends Component{
  
 </div>
 
-<div className="contact-card">
+{/* <div className="contact-card">
   <div className="card-content">
     <div className="card-header">
       <b className="head-office">Australia</b>
@@ -280,14 +284,12 @@ class Contactus extends Component{
         <div className="contact-item">
           <b>Email:</b> <span>Info@VikahEcotech.com</span>
         </div>
-        {/* <div className="contact-item">
-          <b>Website:</b> <span>www.vikhaecotech.com</span>
-        </div> */}
+    
       </div>
     </div>
   </div>
  
-</div>
+</div> */}
 </div>
 
                     

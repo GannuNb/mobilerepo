@@ -10,6 +10,9 @@ import Plasticbalersimage2 from "./images/plasticbalersimages2.jpg"
 
 
 class Plasticbalers extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>
